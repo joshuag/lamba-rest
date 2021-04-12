@@ -9,9 +9,10 @@ In the lambda itself, you can update your lambda_handler to return `RouteRegistr
 
 You can decorate functions inside of your lambda with `@route` like so:
 
-```@route("/path_to_resource/{resource_id}", "GET", required_roles=['user'])
-    def get_resource(resource_id):
-        pass
+```
+@route("/path_to_resource/{resource_id}", "GET", required_roles=['user'])
+def get_resource(resource_id):
+    pass
 
 ```
 
