@@ -3,7 +3,7 @@
 
 ## How to use
 
-Zip the python directory under lambda-layer, and upload it as a lambda-layer. Then, in your lambda, you can import `from lambda-routing.routing import RouteRegistry, Route`
+Zip the python directory under lambda-layer, and upload it as a lambda-layer. Then, in your lambda, you can import `from lambda-routing.routing import RouteRegistry, route`
 
 In the lambda itself, you can update your lambda_handler to return `RouteRegistry.match_and_execute_route_for_gateway(event, user=user)` where user is a user object that you can create that minimally has a `roles` list property.
 
