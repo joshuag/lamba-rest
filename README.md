@@ -1,4 +1,4 @@
-# lamba-rest
+# lambda-rest
  An AWS lambda REST library
 
 ## How to use
