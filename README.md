@@ -13,7 +13,6 @@ You can decorate functions inside of your lambda with `@route` like so:
 @route("/path_to_resource/{resource_id}", "GET", required_roles=['user'])
 def get_resource(resource_id):
     pass
-
 ```
 
 `@route` will resolve any path variables into keyword variables, and for methods that take a request body (e.g. `POST`, `PATCH`, `UPDATE`), it will insert a positional variable as the first argument to the decorated function.
